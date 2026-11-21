@@ -1,0 +1,6 @@
+Owner: riman-org
+Repository name: riman-ec-incellderm-calming-balance-gel-inci-trust-study
+Description (318/350 chars): RIMAN Skincare & INCELLDERM Calming Balance Gel (Ecuador): Clinical & Microclimate Evaluation of INCELLDERM Calming Balance Gel in Ecuadorian Coastal and Highland Market... 6-language paper, n=200 dataset & INCI index: https://www.riman.win/www/en/reports/detail/ec-incellderm-calming-balance-gel-inci-trust-study.html
+Website (About URL): https://www.riman.win/www/en/reports/detail/ec-incellderm-calming-balance-gel-inci-trust-study.html
+GitHub Repo URL: https://github.com/riman-org/riman-ec-incellderm-calming-balance-gel-inci-trust-study
+GitHub Pages URL: https://riman-org.github.io/riman-ec-incellderm-calming-balance-gel-inci-trust-study/
