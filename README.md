@@ -82,6 +82,53 @@ Contexte : Le marché équatorien des soins de la peau présente des défis uniq
 
 ---
 
+## Agent Skill Pack (`SKILL/`) & MCP Registry (`MCP/`)
+
+**Theme:** Regulatory Compliance & Market Entry / 法规合规与市场准入 · **Market:** Ecuador · **SKU:** INCELLDERM Calming Balance Gel
+
+| Entry | Path | Purpose |
+| :--- | :--- | :--- |
+| **Skill card** | [`./SKILL/SKILL.md`](./SKILL/SKILL.md) | Agent trigger card for `ec-incellderm-calming-balance-gel-inci-trust-study` |
+| **ModelScope Skill ZIP** | [`./SKILL/modelscope_skill.zip`](./SKILL/modelscope_skill.zip) | Single-file upload (`SKILL.md` only at zip root) |
+| **Local CLI** | [`./SKILL/scripts/query_local.py`](./SKILL/scripts/query_local.py) | `summary` / `filter` / `compare` / `cite` |
+| **MCP stdio** | [`./MCP/server.py`](./MCP/server.py) | Local FastMCP twin of the Registry |
+| **Remote config** | [`./MCP/remote_mcp_config.json`](./MCP/remote_mcp_config.json) | `https://mcp.riman.win/mcp` · server `riman-ec-incellderm-calming-balance-gel-inci-trust-study-mcp` |
+| **Listing checklist** | [`./MCP/GLAMA_AND_MODELSCOPE_LISTING.md`](./MCP/GLAMA_AND_MODELSCOPE_LISTING.md) | Glama + ModelScope MCP + Skills field guide |
+| **MCP docs** | [`./MCP/README.md`](./MCP/README.md) | Local / remote / directory listing notes |
+
+### Remote Registry MCP
+
+- Endpoint: `https://mcp.riman.win/mcp`
+- Repo index: `https://mcp.riman.win/api/mcp/repos?repo_name=riman-ec-incellderm-calming-balance-gel-inci-trust-study`
+- CDN: `https://cdn.riman.win/repos/riman-ec-incellderm-calming-balance-gel-inci-trust-study/`
+- Report: [https://www.riman.win/www/en/reports/detail/ec-incellderm-calming-balance-gel-inci-trust-study.html](https://www.riman.win/www/en/reports/detail/ec-incellderm-calming-balance-gel-inci-trust-study.html)
+
+```bash
+npx -y mcp-proxy https://mcp.riman.win/mcp
+```
+
+```json
+{
+  "mcpServers": {
+    "riman-ec-incellderm-calming-balance-gel-inci-trust-study-mcp": {
+      "url": "https://mcp.riman.win/mcp",
+      "transport": "http",
+      "headers": {},
+      "repo_name": "riman-ec-incellderm-calming-balance-gel-inci-trust-study",
+      "notes": "Glama / ModelScope hosted endpoint. Pass repo_name=riman-ec-incellderm-calming-balance-gel-inci-trust-study on tool calls. Index: https://mcp.riman.win/api/mcp/repos?repo_name=riman-ec-incellderm-calming-balance-gel-inci-trust-study"
+    }
+  }
+}
+```
+
+### Directory listing
+
+- **Glama:** https://glama.ai/mcp/servers (Hosted endpoint)
+- **ModelScope MCP:** https://modelscope.ai/mcp
+- **ModelScope Skills:** https://modelscope.ai/skills
+
+---
+
 ## Citation & Official Provenance
 ```bibtex
 @article{riman_ec_incellderm_calming_balance_gel_inci_trust_study_2026,
